@@ -1,0 +1,209 @@
+a {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+
+a:hover {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+
+p {
+  font-family: "PT Sans Caption", sans-serif;
+  color: #000000; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fjalla One", sans-serif;
+  text-transform: uppercase; }
+
+h2, h3 {
+  color: #49977d;
+  color: #592941;
+  font-size: 45px; }
+
+h4 {
+  color: #000000; }
+
+.bottom-space {
+  margin-bottom: 20px; }
+
+.clear {
+  clear: left; }
+
+.nowrap {
+  white-space: nowrap; }
+
+.hide {
+  display: none; }
+
+header.navbar-default {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent; }
+
+header.navbar {
+  margin-bottom: 60px; }
+  header.navbar .mag-title {
+    height: 100%; }
+    header.navbar .mag-title h1 {
+      font-size: 69px;
+      font-size: 8vw;
+      positon: relative;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+.thumbnail {
+  border: transparent; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-brand {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 25px; }
+
+.navbar-default {
+  background-color: #2c3e50;
+  border-color: #ffffff;
+  color: #ffffff; }
+  .navbar-default .navbar-brand {
+    color: #ffffff; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #18bc9c;
+    background-color: transparent; }
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff; }
+  .navbar-default .navbar-nav > active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #1a242f; }
+  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #18bc9c;
+    background-color: transparent; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: 1a242f;
+    color: #ffffff; }
+
+.btn-primary {
+  background-color: #2c3e50;
+  border-color: #2c3e50;
+  color: #ffffff; }
+
+.btn-primary:hover, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .open .dropdowwn-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #1e2a36;
+  border-color: #1e2a36; }
+
+.btn-success {
+  background-color: #18bc9c;
+  border-color: #18bc9c;
+  color: #ffffff; }
+
+.btn-success:hover,
+.btn-success:hover,
+.btn-success:active,
+.btn-success.active,
+.open .dropdowwn-toggle.btn-success {
+  color: #ffffff;
+  background-color: #13987e;
+  border-color: #13987e; }
+
+.btn-default {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  color: #ffffff; }
+
+.btn-default:hover,
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active,
+.open .dropdowwn-toggle.btn-default {
+  color: #ffffff;
+  background-color: #7f9293;
+  border-color: #74898a; }
+
+.thumbnail {
+  overflow: hidden; }
+  .thumbnail img {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%; }
+
+.home-thumbnail img:hover {
+  transform: scale(1.1); }
+
+.bg-grey {
+  color: #f9f9f9; }
+
+#home-page p {
+  color: #ffffff;
+  line-height: 34px; }
+#home-page .address-container {
+  margin-bottom: 50px; }
+  #home-page .address-container .headline {
+    margin-bottom: 50px; }
+    #home-page .address-container .headline h2 {
+      font-size: 88px; }
+    #home-page .address-container .headline p {
+      font-size: 24px;
+      line-height: 24px;
+      color: #000;
+      font-weight: 900; }
+#home-page .address-label {
+  padding: 15px;
+  background-color: #fefefe; }
+  #home-page .address-label p {
+    color: #000000; }
+  #home-page .address-label i {
+    color: #592941; }
+#home-page a {
+  color: #49977d;
+  color: #592941;
+  padding-right: 5px; }
+#home-page .left-content {
+  margin-bottom: 200px; }
+  #home-page .left-content p {
+    font-size: 29px;
+    font-weight: 900; }
+#home-page .right-content h3 {
+  font-size: 55px;
+  margin-top: -10px; }
+#home-page .right-content p {
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase; }
+#home-page .main-container {
+  background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800");
+  /*background: no-repeat center url("../images/whit-dubois-bg-XL.png") */
+  background-size: cover;
+  background-position: center center;
+  background-color: green;
+  min-height: 100vh;
+  width: 100vw; }
+  #home-page .main-container a {
+    color: #ffffff; }
+
+#resume p {
+  color: #000000;
+  line-height: 24px; }
+#resume ul li {
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 14px; }
+#resume h3 {
+  font-size: 35px; }
+#resume h5 {
+  font-size: 16px; }
+#resume article {
+  margin-bottom: 25px; }
+
+@media (min-width: 1579px) {
+  header.navbar .mag-title h1 {
+    font-size: 126px; } }
+@media (max-width: 991px) {
+  .left-content {
+    margin-bottom: 50px; } }
+
+/*# sourceMappingURL=whit-dubois.css.map */

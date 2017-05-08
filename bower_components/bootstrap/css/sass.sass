@@ -1,0 +1,262 @@
+$nobile: 'Nobile', sans-serif
+$caption: 'PT Sans Caption', sans-serif
+$rochester: 'Rochester', cursive
+$fjalla: 'Fjalla One', sans-serif
+$alfa: 'Alfa Slab One', cursive
+$average: 'Average', serif
+
+$primary: #cfb53B
+$secondary: #000000
+$white: #ffffff
+$lt-grey: #cacfd6
+$wine: #592941
+
+=transform($scale)
+    transform: $scale
+    
+=transition($transition)
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    -ms-transition: $transition
+    transition: $transition
+    
+a
+    +transition(all 0.5s ease 0s)
+        
+a:hover
+    +transition(all 0.5s ease 0s)
+    
+p
+    font-family: $caption
+    color: #000000
+
+    
+h1, h2, h3, h4, h5, h6
+    font-family: $fjalla
+    text-transform: uppercase
+
+h2, h3
+    color: #49977d
+    color: $wine
+    font-size: 45px
+h4
+    color: #000000
+    
+.bottom-space
+    margin-bottom: 20px
+    
+.clear
+    clear: left
+    
+.nowrap
+    white-space: nowrap
+
+.hide
+    display: none
+    
+header.navbar-default
+    background-color: transparent
+    background: transparent
+    border-color: transparent
+    
+header.navbar
+    margin-bottom: 60px
+    
+    .mag-title
+        height: 100%
+
+        h1
+            font-size: 69px
+            font-size: 8vw
+            positon: relative
+            text-transform: uppercase
+            font-weight: bold
+            
+.thumbnail
+    border: transparent
+    
+.navbar
+    margin-bottom: 0
+    
+    
+.navbar-brand
+    font-family: $fjalla
+    font-size: 25px
+    
+.navbar-default
+    background-color: #2c3e50
+    border-color: #ffffff
+    color: $white
+    
+    .navbar-brand
+        color: $white
+        
+    .navbar-brand:hover, .navbar-brand:focus
+        color: #18bc9c
+        background-color: transparent
+        
+    .navbar-nav > li > a
+        color: $white
+        
+    .navbar-nav > active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus
+        color: $white
+        background-color: #1a242f
+    
+    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus
+        color: #18bc9c
+        background-color: transparent
+    
+    .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus
+        background-color: 1a242f
+        color: $white
+        
+.btn-primary
+    background-color: #2c3e50
+    border-color: #2c3e50
+    color: $white
+    
+.btn-primary:hover, .btn-primary:hover, .btn-primary:active, .btn-primary.active, .open .dropdowwn-toggle.btn-primary
+    color: $white
+    background-color: #1e2a36
+    border-color: #1e2a36
+
+.btn-success
+    background-color: #18bc9c
+    border-color: #18bc9c
+    color: $white
+    
+.btn-success:hover, 
+.btn-success:hover, 
+.btn-success:active,
+.btn-success.active,
+.open .dropdowwn-toggle.btn-success
+    color: $white
+    background-color: #13987e
+    border-color: #13987e
+    
+.btn-default
+    background-color: #95a5a6
+    border-color: #95a5a6
+    color: $white
+    
+.btn-default:hover, 
+.btn-default:hover, 
+.btn-default:active,
+.btn-default.active,
+.open .dropdowwn-toggle.btn-default
+    color: $white
+    background-color: #7f9293
+    border-color: #74898a
+    
+.thumbnail
+    overflow: hidden
+    
+    img
+        +transition(all 0.5s ease 0s)
+        width: 100%
+        
+.home-thumbnail
+    img:hover
+        transform: scale(1.1)
+    
+.bg-grey
+    color: #f9f9f9
+    
+//HOME PAGE
+
+#home-page
+    p
+        color: #ffffff
+        line-height: 34px
+    
+    .address-container
+        margin-bottom: 50px
+        
+        .headline
+            margin-bottom: 50px
+            
+            h2
+                font-size: 88px
+            p
+                font-size: 24px
+                line-height: 24px
+                color: #000
+                font-weight: 900
+        
+    .address-label
+        padding: 15px
+        background-color: #fefefe
+        
+        
+        p 
+            color: #000000
+            
+        i
+            color: #592941
+        
+    
+    .social-icons
+    
+    a
+        color: #49977d
+        color: $wine
+        padding-right: 5px
+    
+    .left-content
+        margin-bottom: 200px
+        
+        p
+            font-size: 29px
+            font-weight: 900
+            
+    .right-content
+        h3
+            font-size: 55px
+            margin-top: -10px
+        p
+            font-size: 38px
+            font-weight: bold
+            text-transform: uppercase
+    .main-container
+        background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800")
+
+        /*background: no-repeat center url("../images/whit-dubois-bg-XL.png")*/
+        background-size: cover
+        background-position: center center
+        background-color: green
+        min-height: 100vh
+        width: 100vw
+
+        a
+            color: #ffffff           
+
+#resume
+    p
+        color: #000000
+        line-height: 24px
+    
+    ul
+        li
+            font-family: $caption
+            font-size: 14px
+    h3
+        font-size: 35px
+    
+    h5
+        font-size: 16px
+    
+    article
+        margin-bottom: 25px
+        
+
+@media (min-width: 1579px)
+    header.navbar 
+        .mag-title 
+            h1
+                font-size: 126px
+        
+@media (max-width: 991px)
+    .headline
+        
+    .left-content
+        margin-bottom: 50px
