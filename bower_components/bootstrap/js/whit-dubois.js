@@ -28,3 +28,9 @@ console.log(greeting);
 
 var elGreet = document.getElementById('greeting');
 elGreet.textContent = month[today.getMonth()];
+
+
+
+function showResume(){
+    $("")
+}

@@ -10,6 +10,7 @@ $secondary: #000000
 $white: #ffffff
 $lt-grey: #cacfd6
 $wine: #592941
+$space-cadet: #1b264f
 
 =transform($scale)
     transform: $scale
@@ -19,6 +20,12 @@ $wine: #592941
     -moz-transition: $transition
     -ms-transition: $transition
     transition: $transition
+    
+=text-shadow($shadow)
+    -webkit-text-shadow: $shadow
+    -moz-text-shadow: $shadow
+    -ms-text-shadow: $shadow
+    text-shadow: $shadow
     
 a
     +transition(all 0.5s ease 0s)
@@ -174,49 +181,58 @@ header.navbar
         
         .headline
             margin-bottom: 50px
+            margin-top: 200px
             
             h2
                 font-size: 88px
+                +text-shadow(1px 1px 2px #000000)
             p
-                font-size: 24px
-                line-height: 24px
-                color: #000
+                font-size: 30px
+                line-height: 28px
+                color: $white
                 font-weight: 900
+                +text-shadow(1px 1px 2px #000000)
         
     .address-label
         padding: 15px
         background-color: #fefefe
+        margin-top: 420px
         
         
         p 
             color: #000000
             
         i
-            color: #592941
+            color: $space-cadet
         
     
     .social-icons
     
     a
         color: #49977d
-        color: $wine
+        color: $space-cadet
         padding-right: 5px
     
     .left-content
-        margin-bottom: 200px
-        
+        h3
+            +text-shadow(.5px .5px 2px #000000)
+                
         p
             font-size: 29px
             font-weight: 900
+            +text-shadow(.5px .5px 2px #000000)
             
     .right-content
         h3
             font-size: 55px
             margin-top: -10px
+            +text-shadow(1px 1px 2px #000000)
         p
             font-size: 38px
             font-weight: bold
             text-transform: uppercase
+            +text-shadow(1px 1px 2px #000000)
+                
     .main-container
         background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800")
 
@@ -231,6 +247,8 @@ header.navbar
             color: #ffffff           
 
 #resume
+    padding-top: 30px
+
     p
         color: #000000
         line-height: 24px
@@ -256,7 +274,22 @@ header.navbar
                 font-size: 126px
         
 @media (max-width: 991px)
-    .headline
+    #home-page
+        .address-label
+            margin-top: 20px    
         
-    .left-content
-        margin-bottom: 50px
+        .address-container
+            .headline
+                margin-top: 100px
+                        
+@media (max-width: 767px)
+    #home-page
+        .left-content
+            margin-bottom: 50px
+            
+        .headline-container
+            /* margin-top: 900px */
+    
+    #resume
+        padding-left: 30px
+        padding-right: 30px

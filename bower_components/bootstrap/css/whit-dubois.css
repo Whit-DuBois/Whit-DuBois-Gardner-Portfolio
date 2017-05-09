@@ -144,37 +144,62 @@ header.navbar {
 #home-page .address-container {
   margin-bottom: 50px; }
   #home-page .address-container .headline {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-top: 200px; }
     #home-page .address-container .headline h2 {
-      font-size: 88px; }
+      font-size: 88px;
+      -webkit-text-shadow: 1px 1px 2px #000000;
+      -moz-text-shadow: 1px 1px 2px #000000;
+      -ms-text-shadow: 1px 1px 2px #000000;
+      text-shadow: 1px 1px 2px #000000; }
     #home-page .address-container .headline p {
-      font-size: 24px;
-      line-height: 24px;
-      color: #000;
-      font-weight: 900; }
+      font-size: 30px;
+      line-height: 28px;
+      color: #ffffff;
+      font-weight: 900;
+      -webkit-text-shadow: 1px 1px 2px #000000;
+      -moz-text-shadow: 1px 1px 2px #000000;
+      -ms-text-shadow: 1px 1px 2px #000000;
+      text-shadow: 1px 1px 2px #000000; }
 #home-page .address-label {
   padding: 15px;
-  background-color: #fefefe; }
+  background-color: #fefefe;
+  margin-top: 420px; }
   #home-page .address-label p {
     color: #000000; }
   #home-page .address-label i {
-    color: #592941; }
+    color: #1b264f; }
 #home-page a {
   color: #49977d;
-  color: #592941;
+  color: #1b264f;
   padding-right: 5px; }
-#home-page .left-content {
-  margin-bottom: 200px; }
-  #home-page .left-content p {
-    font-size: 29px;
-    font-weight: 900; }
+#home-page .left-content h3 {
+  -webkit-text-shadow: 0.5px 0.5px 2px #000000;
+  -moz-text-shadow: 0.5px 0.5px 2px #000000;
+  -ms-text-shadow: 0.5px 0.5px 2px #000000;
+  text-shadow: 0.5px 0.5px 2px #000000; }
+#home-page .left-content p {
+  font-size: 29px;
+  font-weight: 900;
+  -webkit-text-shadow: 0.5px 0.5px 2px #000000;
+  -moz-text-shadow: 0.5px 0.5px 2px #000000;
+  -ms-text-shadow: 0.5px 0.5px 2px #000000;
+  text-shadow: 0.5px 0.5px 2px #000000; }
 #home-page .right-content h3 {
   font-size: 55px;
-  margin-top: -10px; }
+  margin-top: -10px;
+  -webkit-text-shadow: 1px 1px 2px #000000;
+  -moz-text-shadow: 1px 1px 2px #000000;
+  -ms-text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 2px #000000; }
 #home-page .right-content p {
   font-size: 38px;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  -webkit-text-shadow: 1px 1px 2px #000000;
+  -moz-text-shadow: 1px 1px 2px #000000;
+  -ms-text-shadow: 1px 1px 2px #000000;
+  text-shadow: 1px 1px 2px #000000; }
 #home-page .main-container {
   background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800");
   /*background: no-repeat center url("../images/whit-dubois-bg-XL.png") */
@@ -186,24 +211,37 @@ header.navbar {
   #home-page .main-container a {
     color: #ffffff; }
 
-#resume p {
-  color: #000000;
-  line-height: 24px; }
-#resume ul li {
-  font-family: "PT Sans Caption", sans-serif;
-  font-size: 14px; }
-#resume h3 {
-  font-size: 35px; }
-#resume h5 {
-  font-size: 16px; }
-#resume article {
-  margin-bottom: 25px; }
+#resume {
+  padding-top: 30px; }
+  #resume p {
+    color: #000000;
+    line-height: 24px; }
+  #resume ul li {
+    font-family: "PT Sans Caption", sans-serif;
+    font-size: 14px; }
+  #resume h3 {
+    font-size: 35px; }
+  #resume h5 {
+    font-size: 16px; }
+  #resume article {
+    margin-bottom: 25px; }
 
 @media (min-width: 1579px) {
   header.navbar .mag-title h1 {
     font-size: 126px; } }
 @media (max-width: 991px) {
-  .left-content {
-    margin-bottom: 50px; } }
+  #home-page .address-label {
+    margin-top: 20px; }
+  #home-page .address-container .headline {
+    margin-top: 100px; } }
+@media (max-width: 767px) {
+  #home-page .left-content {
+    margin-bottom: 50px; }
+  #home-page .headline-container {
+    /* margin-top: 900px */ }
+
+  #resume {
+    padding-left: 30px;
+    padding-right: 30px; } }
 
 /*# sourceMappingURL=whit-dubois.css.map */
