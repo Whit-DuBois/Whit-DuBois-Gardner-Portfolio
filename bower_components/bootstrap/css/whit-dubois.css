@@ -138,33 +138,36 @@ header.navbar {
 .bg-grey {
   color: #f9f9f9; }
 
+#home-page h1 {
+  letter-spacing: 0.05em;
+  text-shadow: 1px 1px 2px #576CA8, 7px 7px 0px rgba(0, 0, 0, 0.2); }
 #home-page p {
   color: #ffffff;
-  line-height: 34px; }
+  line-height: 27px; }
 #home-page .address-container {
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
   #home-page .address-container .headline {
     margin-bottom: 50px;
-    margin-top: 200px; }
+    margin-top: 140px; }
     #home-page .address-container .headline h2 {
-      font-size: 88px;
-      -webkit-text-shadow: 1px 1px 2px #000000;
-      -moz-text-shadow: 1px 1px 2px #000000;
-      -ms-text-shadow: 1px 1px 2px #000000;
-      text-shadow: 1px 1px 2px #000000; }
+      font-size: 60px;
+      -webkit-text-shadow: 1px 1px 2px #1B264F;
+      -moz-text-shadow: 1px 1px 2px #1B264F;
+      -ms-text-shadow: 1px 1px 2px #1B264F;
+      text-shadow: 1px 1px 2px #1B264F; }
     #home-page .address-container .headline p {
-      font-size: 30px;
+      font-size: 27px;
       line-height: 28px;
       color: #ffffff;
       font-weight: 900;
-      -webkit-text-shadow: 1px 1px 2px #000000;
-      -moz-text-shadow: 1px 1px 2px #000000;
-      -ms-text-shadow: 1px 1px 2px #000000;
-      text-shadow: 1px 1px 2px #000000; }
+      -webkit-text-shadow: 1px 1px 2px #1B264F;
+      -moz-text-shadow: 1px 1px 2px #1B264F;
+      -ms-text-shadow: 1px 1px 2px #1B264F;
+      text-shadow: 1px 1px 2px #1B264F; }
 #home-page .address-label {
   padding: 15px;
   background-color: #fefefe;
-  margin-top: 420px; }
+  margin-top: 335px; }
   #home-page .address-label p {
     color: #000000; }
   #home-page .address-label i {
@@ -174,32 +177,32 @@ header.navbar {
   color: #1b264f;
   padding-right: 5px; }
 #home-page .left-content h3 {
-  -webkit-text-shadow: 0.5px 0.5px 2px #000000;
-  -moz-text-shadow: 0.5px 0.5px 2px #000000;
-  -ms-text-shadow: 0.5px 0.5px 2px #000000;
-  text-shadow: 0.5px 0.5px 2px #000000; }
+  -webkit-text-shadow: 0.5px 0.5px 2px #1B264F;
+  -moz-text-shadow: 0.5px 0.5px 2px #1B264F;
+  -ms-text-shadow: 0.5px 0.5px 2px #1B264F;
+  text-shadow: 0.5px 0.5px 2px #1B264F; }
 #home-page .left-content p {
   font-size: 29px;
   font-weight: 900;
-  -webkit-text-shadow: 0.5px 0.5px 2px #000000;
-  -moz-text-shadow: 0.5px 0.5px 2px #000000;
-  -ms-text-shadow: 0.5px 0.5px 2px #000000;
-  text-shadow: 0.5px 0.5px 2px #000000; }
+  -webkit-text-shadow: 0.5px 0.5px 2px #1B264F;
+  -moz-text-shadow: 0.5px 0.5px 2px #1B264F;
+  -ms-text-shadow: 0.5px 0.5px 2px #1B264F;
+  text-shadow: 0.5px 0.5px 2px #1B264F; }
 #home-page .right-content h3 {
   font-size: 55px;
   margin-top: -10px;
-  -webkit-text-shadow: 1px 1px 2px #000000;
-  -moz-text-shadow: 1px 1px 2px #000000;
-  -ms-text-shadow: 1px 1px 2px #000000;
-  text-shadow: 1px 1px 2px #000000; }
+  -webkit-text-shadow: 1px 1px 2px #1B264F;
+  -moz-text-shadow: 1px 1px 2px #1B264F;
+  -ms-text-shadow: 1px 1px 2px #1B264F;
+  text-shadow: 1px 1px 2px #1B264F; }
 #home-page .right-content p {
-  font-size: 38px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
-  -webkit-text-shadow: 1px 1px 2px #000000;
-  -moz-text-shadow: 1px 1px 2px #000000;
-  -ms-text-shadow: 1px 1px 2px #000000;
-  text-shadow: 1px 1px 2px #000000; }
+  -webkit-text-shadow: 1px 1px 2px #1B264F;
+  -moz-text-shadow: 1px 1px 2px #1B264F;
+  -ms-text-shadow: 1px 1px 2px #1B264F;
+  text-shadow: 1px 1px 2px #1B264F; }
 #home-page .main-container {
   background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800");
   /*background: no-repeat center url("../images/whit-dubois-bg-XL.png") */
