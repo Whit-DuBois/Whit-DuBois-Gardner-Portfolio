@@ -1,10 +1,10 @@
 a {
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -ms-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s; }
+  text-decoration: none;
+  padding-bottom: 1px; }
 
 a:hover {
+  text-decoration: none;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.8);
   -webkit-transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -ms-transition: all 0.5s ease 0s;
@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 h2, h3 {
-  color: #49977d;
   color: #592941;
   font-size: 45px; }
 
@@ -71,7 +70,6 @@ header.navbar {
   .navbar-default .navbar-brand {
     color: #ffffff; }
   .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #18bc9c;
     background-color: transparent; }
   .navbar-default .navbar-nav > li > a {
     color: #ffffff; }
@@ -82,7 +80,7 @@ header.navbar {
     color: #18bc9c;
     background-color: transparent; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-    background-color: 1a242f;
+    background-color: #1a242f;
     color: #ffffff; }
 
 .btn-primary {
@@ -138,6 +136,24 @@ header.navbar {
 .bg-grey {
   color: #f9f9f9; }
 
+.no-js #loader {
+  display: none; }
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0; }
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../images/preloader_6.gif) center no-repeat #fff; }
+
 #home-page h1 {
   letter-spacing: 0.05em;
   text-shadow: 1px 1px 2px #576CA8, 7px 7px 0px rgba(0, 0, 0, 0.2); }
@@ -148,7 +164,7 @@ header.navbar {
   margin-bottom: 40px; }
   #home-page .address-container .headline {
     margin-bottom: 50px;
-    margin-top: 140px; }
+    margin-top: 100px; }
     #home-page .address-container .headline h2 {
       font-size: 60px;
       -webkit-text-shadow: 1px 1px 2px #1B264F;
@@ -208,7 +224,6 @@ header.navbar {
   /*background: no-repeat center url("../images/whit-dubois-bg-XL.png") */
   background-size: cover;
   background-position: center center;
-  background-color: green;
   min-height: 100vh;
   width: 100vw; }
   #home-page .main-container a {
@@ -229,6 +244,84 @@ header.navbar {
   #resume article {
     margin-bottom: 25px; }
 
+.hamburger * {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  box-sizing: border-box; }
+
+.hamburger {
+  position: relative;
+  width: 50px;
+  float: right; }
+
+.hamburger label {
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: -15px;
+  left: 30px; }
+
+.hamburger .line {
+  position: absolute;
+  height: 5px;
+  width: 80%;
+  background-color: #592941; }
+
+.hamburger .diagonal.part-1 {
+  position: relative;
+  float: left;
+  background-color: #592941; }
+
+.hamburger .horizontal {
+  position: relative;
+  float: left;
+  margin-top: 6px;
+  background-color: #592941; }
+
+.hamburger .diagonal.part-2 {
+  position: relative;
+  float: left;
+  margin-top: 6px;
+  background-color: #592941; }
+
+.hamburger input[type=checkbox] ~ .lines > .horizontal {
+  transform: scale(2, 1);
+  -webkit-transform: scale(2, 1);
+  opacity: 0; }
+
+.hamburger input[type=checkbox] ~ .lines > .diagonal.part-1 {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-top: 10px; }
+
+.hamburger input[type=checkbox] ~ .lines > .diagonal.part-2 {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-top: -16px; }
+
+input[type=checkbox], input[type=radio] {
+  margin: 0 -9999px 0; }
+
+.hamburger input[type=checkbox]:checked ~ .lines > .horizontal {
+  transform: scale(4, 1);
+  -webkit-transform: scale(4, 1);
+  opacity: 0; }
+
+.hamburger input[type=checkbox]:checked ~ .lines > .diagonal.part-1 {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-top: 10px; }
+
+.hamburger input[type=checkbox]:checked ~ .lines > .diagonal.part-2 {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  margin-top: -16px; }
+
+input[type=checkbox], input[type=radio] {
+  margin: 0 -9999px 0; }
+
 @media (min-width: 1579px) {
   header.navbar .mag-title h1 {
     font-size: 126px; } }
@@ -238,13 +331,20 @@ header.navbar {
   #home-page .address-container .headline {
     margin-top: 100px; } }
 @media (max-width: 767px) {
+  #home-page h1 {
+    font-size: 13vw; }
   #home-page .left-content {
     margin-bottom: 50px; }
   #home-page .headline-container {
     /* margin-top: 900px */ }
+  #home-page .address-label {
+    margin-top: 70%; }
 
   #resume {
     padding-left: 30px;
-    padding-right: 30px; } }
+    padding-right: 30px; }
+
+  .mobile-hide {
+    display: none; } }
 
 /*# sourceMappingURL=whit-dubois.css.map */

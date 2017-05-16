@@ -28,6 +28,7 @@
   </head>
     
   <body id="home-page">
+    <div class="se-pre-con"></div>
       
     <div class="container-fluid main-container">
       <!-- Header -->
@@ -44,11 +45,11 @@
       
         
       <!-- Body -->
-      <section class="headline-container container">
+      <section class="headline-container container mobile-hide">
           <div class="row"> 
             <div class="col-sm-3 text-center left-content">
                 <h3>Technology</h3>
-                <p>Twitter Bootstrap</p>
+                <p>Bootstrap</p>
                 <p>HTML5</p>
                 <p>CSS3/SASS</p>
                 <p>Javascript</p>
@@ -68,19 +69,19 @@
                 <p><a href="http://openforbreakfast.com" target="_blank">Kellogg's</a></p>
                 <p><a href="http://qikweb.site" target="_blank">Qikweb</a></p>
                 <p class="nowrap"><a href="http://mccabemarket.com" target="_blank">McCabe Market</a></p>
-                <p><a href="#" class="showResume">More Details</a></p>
+                <p><a href="#resume" class="showResume">More Details</a></p>
             </div>
           </div>
       </section>
       
       <section class="address-container container">
           <div class="row">
-            <div class="col-md-6 headline text-center">
+            <div class="col-md-6 headline text-center mobile-hide">
                 <a href="http://chop.haus" target="_blank"><h2>Maywood's<br/> Finest</h2></a>
-                <p>A dedicated self-motivated, solutions-oriented professional with progressive experience in web design, web development, best practices, and editing, as well as application development. </p> 
+                <p>A dedicated self-motivated, solutions-oriented professional with progressive experience in web design, web development, best practices, and editing, as well as application development.</p>
             </div>
               
-            <div class="col-sm-1"> 
+            <div class="col-sm-1">
             </div>
               
             <div class="col-md-5 address-label">
@@ -93,14 +94,25 @@
 <!--                    <a href="http://instagram.com/whit_dubois" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>-->
                     <a href="http://twitter.com/whit_dubois" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                     <a href="http://twitter.com/whit_dubois" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+                    <a href="#" class="showResume" title="Resume"><i class="fa fa-file fa-2x"></i></a>
+                    <a href="#" title="Resume Download" download><i class="fa fa-file-pdf-o fa-2x"></i></a>
                 </p>
             </div>
+            
           </div>
       </section>
     </div>
       
     <!--  Resume-->
-    <div id="resume" class="container-fluid resume-container container hide"> 
+    <div id="resume" class="container-fluid resume-container container hi de">
+        <div class="hamburger closeResume" id="closeResume">
+          <input type="checkbox" id="hamburger" />
+          <label for="hamburger" class="lines">
+            <div class="line diagonal part-1"></div>
+            <div class="line horizontal"></div>
+            <div class="line diagonal part-2"></div>
+          </label>
+        </div>
         <section>
             <header>
                 <h2 class="text-center">Whitney DuBois Gardner's Resume</h2>
@@ -131,18 +143,19 @@
                 </ul>
             </article>
             <article>
-                <h4>Freelancer, Chicago, IL | 2015-Present</h4>
+                <h4>OptionsHouse, Chicago, IL | 2016-2017</h4>
                 <h5>Front End Developer</h5>
-                <p></p>
+                <p>Coding of custom WordPress theme and template files using HTML, CSS, and PHP. Continue support of WordPress in-house environment and maintenance.</p>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>Entrusted to create micro-sites according to interactive designs using standard front end developer stack.</li>
+                    <li>Modify existing code as needed.</li>
+                    <li>Perform quality assurance tests on all web projects.</li>
                 </ul>
             </article>
             <article>
                 <h4>Edelman, Chicago, IL | 2014-2015</h4>
                 <h5>Front End Developer</h5>
-                <p>Primary responsibilities included administering Adobe CQ Web Content Management (WCM) software, debugging and maintaining user interface for websites based on functional requirements and scope of work. Ensured content reflected brand standards and usability best practices. Agile environment. </p>
+                <p>Coding of custom WordPress theme and template files using HTML, CSS, and PHP. Continue support of WordPress in-house environment and maintenance.</p>
                 <ul>
                     <li>Utilize expertise in front-end development technologies such as HTML, CSS, JavaScript and jQuery to enhance interactivity</li>
                 </ul>
@@ -239,7 +252,7 @@
             <div class="modal-content">
                 <form class="form-horizontal" role="form">
                     <div class="modal-header">
-                        <h3>Contact</h3>
+                        <h4>Contact</h4>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
@@ -252,6 +265,12 @@
                             <label for="contact-email" class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
                                 <input type="email" class="form-control" id="contact-email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject" class="col-sm-2 control-label">Subject</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
                             </div>
                         </div>
                         <div class="form-group">

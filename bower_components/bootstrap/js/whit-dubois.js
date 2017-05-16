@@ -29,15 +29,36 @@ $(function () {
     console.log(greeting);
 
     var elGreet = document.getElementById('greeting');
-//    elGreet.textContent = month[today.getMonth()];    
+//    elGreet.textContent = month[today.getMonth()];
+    
+    $(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
     
     
     $(".showResume").click(function(){
+        event.preventDefault();
+        
         $(".resume-container").removeClass("hide");
         
-        $("html, body").animate({
+        $("body").animate({
             scrollTop: $("#resume").offset().top
-        }, 1000);
-        
+        }, 700);
     });
+    
+    $(".closeResume").click(function(){
+        event.preventDefault();
+        
+        $("body").animate({
+            scrollTop: $(".main-container").offset().top
+        }, 500);
+        
+        setTimeout(function(){
+           $(".resume-container").addClass("hide"); 
+        }, 500);
+    
+    });
+    
+    
 });

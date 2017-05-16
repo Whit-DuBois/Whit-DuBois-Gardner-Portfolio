@@ -28,10 +28,17 @@ $space-cadet: #1b264f
     text-shadow: $shadow
     
 a
-    +transition(all 0.5s ease 0s)
+    //border-bottom: 1px solid rgba(192, 192, 192, .3)
+    //+transition(all 0.5s ease 0s)
+    text-decoration: none
+    padding-bottom: 1px
         
 a:hover
+    text-decoration: none
+    //border-bottom: 3px solid $space-cadet
+    border-bottom: 3px solid rgba(255, 255, 255, .8)
     +transition(all 0.5s ease 0s)
+    
     
 p
     font-family: $caption
@@ -43,7 +50,7 @@ h1, h2, h3, h4, h5, h6
     text-transform: uppercase
 
 h2, h3
-    color: #49977d
+    //color: #49977d
     color: $wine
     font-size: 45px
 h4
@@ -99,7 +106,7 @@ header.navbar
         color: $white
         
     .navbar-brand:hover, .navbar-brand:focus
-        color: #18bc9c
+        //color: #18bc9c
         background-color: transparent
         
     .navbar-nav > li > a
@@ -114,7 +121,7 @@ header.navbar
         background-color: transparent
     
     .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus
-        background-color: 1a242f
+        background-color: #1a242f
         color: $white
         
 .btn-primary
@@ -168,6 +175,26 @@ header.navbar
     
 .bg-grey
     color: #f9f9f9
+
+//Pre-loader
+.no-js #loader
+    display: none
+    
+.js #loader
+    display: block
+    position: absolute
+    left: 100px
+    top: 0
+    
+.se-pre-con
+    position: fixed
+    left: 0px
+    top: 0px
+    width: 100%
+    height: 100%
+    z-index: 9999
+    background: url(../images/preloader_6.gif) center no-repeat #fff
+
     
 //HOME PAGE
 
@@ -185,7 +212,7 @@ header.navbar
         
         .headline
             margin-bottom: 50px
-            margin-top: 140px
+            margin-top: 100px
             
             h2
                 font-size: 60px
@@ -243,7 +270,7 @@ header.navbar
         /*background: no-repeat center url("../images/whit-dubois-bg-XL.png")*/
         background-size: cover
         background-position: center center
-        background-color: green
+        //background-color: green
         min-height: 100vh
         width: 100vw
 
@@ -269,7 +296,89 @@ header.navbar
     
     article
         margin-bottom: 25px
+
         
+//HAMBURGER
+.hamburger * 
+    transition: all 0.5s ease-in-out
+    -webkit-transition: all 0.5s ease-in-out
+    box-sizing: border-box
+
+.hamburger
+    position: relative
+    width: 50px
+    float: right
+
+.hamburger input[type=checkbox]
+    display:none
+
+.hamburger label
+    cursor: pointer
+    position: absolute
+    z-index: 99
+    height: 100%
+    width: 100%
+    top: -15px
+    left: 30px
+
+.hamburger .line
+    position: absolute
+    height: 5px
+    width: 80%
+    background-color: $wine
+
+.hamburger .diagonal.part-1
+    position: relative
+    float: left
+    background-color: $wine
+
+.hamburger .horizontal
+    position: relative
+    float: left
+    margin-top: 6px
+    background-color: $wine
+
+.hamburger .diagonal.part-2
+    position: relative
+    float: left
+    margin-top: 6px
+    background-color: $wine
+    
+.hamburger input[type=checkbox] ~ .lines > .horizontal
+    transform: scale(2,1)
+    -webkit-transform: scale(2,1)
+    opacity: 0
+
+.hamburger input[type=checkbox] ~ .lines > .diagonal.part-1
+    transform: rotate(-135deg)
+    -webkit-transform: rotate(-135deg)
+    margin-top: 10px
+
+.hamburger input[type=checkbox] ~ .lines > .diagonal.part-2
+    transform: rotate(135deg)
+    -webkit-transform: rotate(135deg)
+    margin-top: -16px
+    
+input[type=checkbox], input[type=radio]
+    margin: 0 -9999px 0
+
+.hamburger input[type=checkbox]:checked ~ .lines > .horizontal
+    transform: scale(4,1)
+    -webkit-transform: scale(4,1)
+    opacity: 0
+
+.hamburger input[type=checkbox]:checked ~ .lines > .diagonal.part-1
+    transform: rotate(135deg)
+    -webkit-transform: rotate(135deg)
+    margin-top: 10px
+
+.hamburger input[type=checkbox]:checked ~ .lines > .diagonal.part-2
+    transform: rotate(-135deg)
+    -webkit-transform: rotate(-135deg)
+    margin-top: -16px
+    
+input[type=checkbox], input[type=radio]
+    margin: 0 -9999px 0
 
 @media (min-width: 1579px)
     header.navbar 
@@ -288,12 +397,26 @@ header.navbar
                         
 @media (max-width: 767px)
     #home-page
+        h1
+            font-size: 13vw
+            
         .left-content
             margin-bottom: 50px
             
         .headline-container
             /* margin-top: 900px */
+            
+        .address-label
+            margin-top: 70%
+            
+            p
+                //font-size: 11px
     
     #resume
         padding-left: 30px
         padding-right: 30px
+        
+    .mobile-hide
+        display: none
+        
+    
