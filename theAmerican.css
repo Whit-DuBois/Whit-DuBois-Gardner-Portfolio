@@ -1,0 +1,94 @@
+.is_stuck #main-logo{
+    /*background: #fff;*/
+}
+
+.menu-overlay .is_stuck .mobile-menu-button {
+    /*background: #fff;*/
+}
+
+body .overlay-menu {
+  background-image: url("http://theamericankc.com/test/wp-content/uploads/2017/05/The-American-Private-Dining-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#masthead.is_stuck .menu-container {
+  background: transparent;
+}
+
+.onepage-pagination{
+display: none !Important;
+}
+
+.overlay.overlay-menu{
+ z-index: 2;
+}
+
+.menu-wrapper{
+z-index: 12;
+}
+
+/* Added 05/18/2017 by Whitney DuBois Gardner */
+.menu-overlay .vmenu-container .menu-sidebar-inner {
+    margin: 0 150px
+}
+
+.main-nav {
+    margin-top: -320px;
+}
+
+footer {
+    position: fixed;
+    bottom: 75px;
+    width: 100.5%;
+}
+
+.mobile-menu-button-light .lines, .mobile-menu-button-light .lines:before, .mobile-menu-button-light .lines:after {
+    background: #ffffff;
+}
+
+@media (max-width: 959px){
+    footer {
+        bottom: 87px;
+        width: 100.5%;
+    }
+    
+    footer .footer-last{
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+  
+    footer .footer-last .uncell {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .footer-scroll-top.footer-scroll-higher {
+        bottom: 30px;
+    }
+}
+
+@media (min-width: 960px){
+  .menu-overlay-left .logo-container, .vmenu-position-left.menu-offcanvas .logo-container {
+   text-align: left;
+   padding-left: 56px;
+  }
+  .menu-overlay .vmenu-container .menu-sidebar-inner {
+    padding: 0px !important;
+  }
+  #main-logo {
+    transition: .3s;
+    padding: 4px 20px;
+}
+
+@media (min-width: 960px){
+  .menu-overlay-left .logo-container, .vmenu-position-left.menu-offcanvas .logo-container {
+   text-align: left;
+   padding-left: 56px;
+  }
+  .menu-overlay .vmenu-container .menu-sidebar-inner {
+    padding: 0px !important;
+  }
+  #main-logo {
+    transition: .3s;
+    padding: 4px 20px;
+}

@@ -26,25 +26,12 @@ $space-cadet: #1b264f
     -moz-text-shadow: $shadow
     -ms-text-shadow: $shadow
     text-shadow: $shadow
-    
-a
-    //border-bottom: 1px solid rgba(192, 192, 192, .3)
-    //+transition(all 0.5s ease 0s)
-    text-decoration: none
-    padding-bottom: 1px
-        
-a:hover
-    text-decoration: none
-    //border-bottom: 3px solid $space-cadet
-    border-bottom: 3px solid rgba(255, 255, 255, .8)
-    +transition(all 0.5s ease 0s)
-    
-    
-p
-    font-family: $caption
-    color: #000000
 
-    
+body
+    //background-color: #222222
+    background: repeating-linear-gradient(45deg, #f3f3f3 0%, #f3f3f3 10%, #ffffff 0%, #ffffff 50%) 0 / 5px 5px
+    +transition(all 0.9s)
+
 h1, h2, h3, h4, h5, h6
     font-family: $fjalla
     text-transform: uppercase
@@ -54,6 +41,20 @@ h2, h3
     color: $wine
     font-size: 45px
 h4
+    color: #000000
+    
+a
+    //text-decoration: none
+    //cursor: pointer
+        
+a:hover
+    text-decoration: none
+    //border-bottom: 3px solid $space-cadet
+    +transition(all 0.9s ease .1s)
+    border-bottom: 1px solid rgba(255, 255, 255, 1)
+     
+p
+    font-family: $caption
     color: #000000
     
 .bottom-space
@@ -67,24 +68,6 @@ h4
 
 .hide
     display: none
-    
-header.navbar-default
-    background-color: transparent
-    background: transparent
-    border-color: transparent
-    
-header.navbar
-    margin-bottom: 60px
-    
-    .mag-title
-        height: 100%
-
-        h1
-            font-size: 69px
-            font-size: 8vw
-            positon: relative
-            text-transform: uppercase
-            font-weight: bold
             
 .thumbnail
     border: transparent
@@ -199,6 +182,21 @@ header.navbar
 //HOME PAGE
 
 #home-page
+    .main-container
+        background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800")
+
+        //background: no-repeat center url("../images/whit-dubois-bg-XL.png")
+        background-size: cover
+        background-position: center center
+        min-height: 100vh
+        width: 100vw
+
+        a
+            color: #ffffff
+        
+        h3 a
+            color: $wine
+            
     h1
         letter-spacing: .05em
         text-shadow: 1px 1px 2px #576CA8, 7px 7px 0px rgba(0, 0, 0, 0.2)
@@ -247,11 +245,22 @@ header.navbar
     .left-content
         h3
             +text-shadow(.5px .5px 2px #1B264F)
+            +transition(all 0.5s ease)
+            
+            a:hover
+                border-bottom: none
                 
         p
             font-size: 29px
             font-weight: 900
             +text-shadow(.5px .5px 2px #1B264F)
+                
+    .left-content:hover h3, .right-content:hover h3
+        +transition(all 0.9s)
+        text-decoration: none
+        -webkit-animation: neon2 1.5s ease-in-out infinite alternate
+        -moz-animation: neon2 1.5s ease-in-out infinite alternate
+        animation: neon2 1.5s ease-in-out infinite alternate
             
     .right-content
         h3
@@ -264,18 +273,24 @@ header.navbar
             text-transform: uppercase
             +text-shadow(1px 1px 2px #1B264F)
                 
-    .main-container
-        background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800")
+        
+    header.navbar-default
+        background-color: transparent
+        background: transparent
+        border-color: transparent
+    
+    header.navbar
+        margin-bottom: 60px
+    
+        .mag-title
+            height: 100%
 
-        /*background: no-repeat center url("../images/whit-dubois-bg-XL.png")*/
-        background-size: cover
-        background-position: center center
-        //background-color: green
-        min-height: 100vh
-        width: 100vw
-
-        a
-            color: #ffffff           
+        h1
+            font-size: 69px
+            font-size: 8vw
+            positon: relative
+            text-transform: uppercase
+            font-weight: bold
 
 #resume
     padding-top: 30px
@@ -379,12 +394,30 @@ input[type=checkbox], input[type=radio]
     
 input[type=checkbox], input[type=radio]
     margin: 0 -9999px 0
+    
+//HEADER GLOW
 
-@media (min-width: 1579px)
-    header.navbar 
-        .mag-title 
-            h1
-                font-size: 126px
+@-moz-keyframes neon2
+    from
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $space-cadet, 0 0 70px $space-cadet, 0 0 80px $space-cadet, 0 0 100px $space-cadet, 0 0 150px $space-cadet
+  
+    to
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $space-cadet, 0 0 35px $space-cadet, 0 0 40px $space-cadet, 0 0 50px $space-cadet, 0 0 75px $space-cadet
+        
+@keyframes neon2
+    from
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $space-cadet, 0 0 70px $space-cadet, 0 0 80px $space-cadet, 0 0 100px $space-cadet, 0 0 150px $space-cadet
+  
+    to
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $space-cadet, 0 0 35px $space-cadet, 0 0 40px $space-cadet, 0 0 50px $space-cadet, 0 0 75px $space-cadet
+
+
+@media (min-width: 1481px)
+    #home-page
+        header.navbar 
+            .mag-title 
+                h1
+                    font-size: 118px
         
 @media (max-width: 991px)
     #home-page
@@ -407,7 +440,7 @@ input[type=checkbox], input[type=radio]
             /* margin-top: 900px */
             
         .address-label
-            margin-top: 70%
+            margin-top: 65%
             
             p
                 //font-size: 11px
