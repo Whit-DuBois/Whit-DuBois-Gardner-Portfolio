@@ -142,7 +142,7 @@ p {
   background: url(../images/preloader_6.gif) center no-repeat #fff; }
 
 #home-page .main-container {
-  background: no-repeat center url("https://i1.wp.com/whitdubois.com/wp-content/uploads/sites/35/2016/03/whit-dubois-bg-1.jpg?fit=1200%2C800");
+  background: no-repeat center url("../images/whit-dubois-bg-1.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 100vh;

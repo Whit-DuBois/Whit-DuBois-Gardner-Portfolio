@@ -62,12 +62,3 @@ $(function () {
     
     
 });
-
-
- jQuery("div.mobile-menu-buttom").on("click",".trigger", function(){
-            alert("Working"); 
-            
-            if (jQuery("div").hasClass("close")) {
-                console.log("Close Div");
-            } 
-        });
